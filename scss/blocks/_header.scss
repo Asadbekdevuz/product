@@ -1,0 +1,149 @@
+.header__inner {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__navbar {
+  display: flex;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+
+.nav__item + .nav__item {
+  margin-left: 30px;
+}
+
+.nav__link {
+  line-height: 28px;
+  color: #22343d;
+}
+
+.header__button {
+  margin-left: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.header__button--sign-in,
+.header__button--sign-up {
+  padding: 10px 24px;
+  font-weight: 600;
+  line-height: 24px;
+  border-radius: 4px;
+}
+
+.header__button--sign-in {
+  color: #173a56;
+  background-color: transparent;
+  border: solid 2px rgb(188, 208, 229);
+}
+
+.header__button--sign-up {
+  color: #ffffff;
+  background-color: #02897a;
+  border: solid 2px #02897a;
+}
+
+.header__button--mode {
+  padding: 4px;
+  border-radius: 50%;
+}
+
+.header__mode-img {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.humburger {
+  display: none;
+}
+
+
+.humburger__modal {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -50px;
+  width: 80%;
+  padding-top: 50px;
+  height: 400px;
+  text-align: center;
+  margin: auto;
+  background-color: rgba(179, 168, 168, 0.98);
+  box-shadow: 0 0 30px 30px #bebcbc;
+  display: none;
+  z-index: 2;
+}
+
+.humburger__link {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.humburger__link:hover {
+  color: #9D8665;
+}
+
+.humburger__link:active {
+  color: #7E6C51;
+}
+
+.humburger__item {
+  margin-bottom: 25px;
+}
+
+.humburger__img-x {
+  display: none;
+}
+
+.humburger__check:checked~.humburger__modal {
+  display: block;
+}
+
+.humburger__check:checked~.humburger__modal~.humburger__img {
+  display: none;
+}
+
+.humburger__check:checked~.humburger__modal~.humburger__img-x {
+  display: block;
+}
+@media only screen and (max-width: 920px) {
+  .header__navbar {
+    display: none;
+  }
+  .humburger {
+    display: block;
+
+  }
+}
+@media only screen and (max-width: 450px) {
+  .humburger__modal{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom:300px;
+    width: 80%;
+    padding-top: 50px;
+    height: 400px;
+    text-align: center;
+    margin: auto;
+    background-color: rgba(179, 168, 168, 0.98);
+    box-shadow: 0 0 30px 30px #bebcbc;
+    display: none;
+  }
+}
