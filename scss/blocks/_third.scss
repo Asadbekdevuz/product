@@ -6,35 +6,39 @@
   justify-content: space-between;
   margin-bottom: 150px;
 }
+strong{
+  color: var(--cl-text);
+}
 .third__item:nth-child(2n) {
   flex-direction: row-reverse;
 }
 .third__item-left{
   max-width: 486px;
 }
-.third__item-heading{
+.third__item--heading{
   margin-bottom: 8px;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  color: #22343D;
+  color: var(--cl-text);
 }
 .third__item-title{
   font-weight: 700;
   font-size: 32px;
   line-height: 48px;
-  color: #22343D;
+  color:var(--cl-text);
 }
 .third__item-text{
   margin-top: 23px;
   margin-bottom: 30px;
+  color: var(--cl-text);
 
 }
 .third__item--text{
   font-weight: 600;
   font-size: 16px;
   line-height: 26px;
-  color: #22343D;
+  color: var(--cl-text);
 }
 .img__first{
   width: 540px;

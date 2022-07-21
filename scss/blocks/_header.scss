@@ -22,9 +22,11 @@
 
 .nav__link {
   line-height: 28px;
-  color: #22343d;
+  color: var(--cl-text);
 }
-
+.nav__link:hover {
+  opacity: 0.7;
+}
 .header__button {
   margin-left: 24px;
   border: none;
@@ -41,9 +43,14 @@
 }
 
 .header__button--sign-in {
-  color: #173a56;
+  color: var(--cl-logo);
   background-color: transparent;
   border: solid 2px rgb(188, 208, 229);
+}
+.header__buton--sign-in:hover {
+  background-color: #173A56;
+  color: #ffffff;
+  border: 1px solid #173A56;
 }
 
 .header__button--sign-up {
@@ -51,10 +58,21 @@
   background-color: #02897a;
   border: solid 2px #02897a;
 }
+.header__button--sign-up:hover {
+  background-color: var(--cl-bg);
+  border: 1px solid #02897a;
+}
+
 
 .header__button--mode {
-  padding: 4px;
+  padding: 4px 9px;
+  padding-top: 8px;
+  background-color: #f3f3f3;
   border-radius: 50%;
+  cursor: pointer;
+}
+.header__button--mode:hover {
+  opacity: 0.7;
 }
 
 .header__mode-img {
@@ -78,8 +96,8 @@
   height: 400px;
   text-align: center;
   margin: auto;
-  background-color: rgba(179, 168, 168, 0.98);
-  box-shadow: 0 0 30px 30px #bebcbc;
+  background-color:var(--cl-bg);
+  box-shadow: 0 0 30px 30px var(--cl-boxsh);
   display: none;
   z-index: 2;
 }
@@ -131,19 +149,28 @@
   }
 }
 @media only screen and (max-width: 450px) {
+  .header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    padding: 8px 0;
+    background-color: var(--cl-bg);
+    box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.25);
+  }
   .humburger__modal{
     position: absolute;
     right: 0;
     left: 0;
-    top: 0;
-    bottom:300px;
+    top: 500px;
     width: 80%;
     padding-top: 50px;
     height: 400px;
     text-align: center;
     margin: auto;
     background-color: rgba(179, 168, 168, 0.98);
-    box-shadow: 0 0 30px 30px #bebcbc;
+    box-shadow: 0 0 20px 20px #bebcbc;
     display: none;
   }
 }

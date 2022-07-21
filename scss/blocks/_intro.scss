@@ -1,7 +1,7 @@
 .intro{
   padding-top: 110px;
   padding-bottom: 360px;
-  background-image: url("../../img/intro-bg.png");
+  background-image: url("../img/intro-bg.png");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: calc(100%);
@@ -13,7 +13,7 @@
   font-size: 32px;
   line-height: 48px;
   text-align: center;
-  color: #22343D;
+  color:var(--cl-text);
   padding-bottom: 66px;
 }
 
@@ -34,7 +34,7 @@
   font-weight: 600;
   font-size: 22px;
   line-height: 33px;
-  color: #22343D;
+  color: var(--cl-text);
   margin-top: 10px;
   margin-bottom: 13px;
   
@@ -43,7 +43,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
-  color: #22343D; 
+  color:var(--cl-text); 
 }
 .intro__link{
   font-weight: 700;
