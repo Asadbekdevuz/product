@@ -136,8 +136,7 @@
   color: #02897a;
   background-color: #ffffff;
 }
-
-@include responsible(1009px) {
+@media only screen and (max-width: 1010px) {
   .price__list {
     justify-content: space-around;
   }
@@ -146,14 +145,12 @@
     margin-top: 32px;
   }
 }
-
-@include responsible(686px) {
+@media only screen and (max-width: 685px){
   .price__item:nth-child(2) {
     margin-top: 32px;
   }
 }
-
-@include responsible(369px) {
+@media only screen and (max-width: 370px){
   .price__item {
     width: 100%;
   }

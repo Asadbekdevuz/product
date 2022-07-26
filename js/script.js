@@ -18,8 +18,8 @@ elBtnsec.addEventListener("click", function () {
 })
 
 elBtn.addEventListener("click", function () {
-  elQuote.classList.toggle("quick-darkmode");
+  elQuote.classList.toggle("quote-darkmode");
 })
 elBtnsec.addEventListener("click", function () {
-  elQuote.classList.toggle("quick-darkmode");
+  elQuote.classList.toggle("quote-darkmode");
 })
